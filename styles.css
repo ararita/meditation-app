@@ -33,12 +33,16 @@ video {
   position: relative;
 }
 
+.player-container img:hover {
+  cursor: pointer;
+}
+
 .player-container svg {
   position: absolute;
   height: 50%;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) rotate(-90deg);
   pointer-events: none;
 }
 
@@ -60,29 +64,25 @@ video {
   cursor: pointer;
   font-size: 20px;
   transition: all 0.5s ease;
+  outline: none;
 }
 
 .time-select button:hover {
-  color: #018eba;
+  color: #4d4e4ec5;
   background: white;
 }
 
+.sound-picker button:hover {
+  background: #0000005d;
+}
+
 .sound-picker button {
-  border: none;
   height: 120px;
   width: 120px;
   border-radius: 50%;
   padding: 30px;
 }
 
-.sound-picker button:nth-child(1) {
-  background: #4972a1;
-}
-
-.sound-picker button:nth-child(2) {
-  background: #a14f49;
-}
-
 .sound-picker button img {
-  height: 80%;
+  height: 100%;
 }
